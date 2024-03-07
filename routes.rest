@@ -5,6 +5,33 @@ GET http://localhost:3000/contacts
 ### Get contact by id
 GET http://localhost:3000/contacts/65e0c42fe73805daecf656e9
 
+### Create contact
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Ricardo",
+    "lastName": "Nascimento",
+    "email": "ricardonascimento@gmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "05/03/1990"
+}
+
+### Update contact
+PUT http://localhost:3000/contacts/65e0c18be73805daecf656e5 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Maria",
+    "lastName": "de Lurdes",
+    "email": "mariadelurdes@gmail.com",
+    "favoriteColor": "Black",
+    "birthday": "09/02/1977"
+}
+
+### Delete Contact
+DELETE http://localhost:3000/contacts/65e8ab58559c92390b41211e
+
 // PRODUCTION
 ### Get all contacts
 GET https://cse341-project-1-lods.onrender.com/contacts
@@ -12,3 +39,29 @@ GET https://cse341-project-1-lods.onrender.com/contacts
 ### Get contact by id
 GET https://cse341-project-1-lods.onrender.com/contacts/65e0c337e73805daecf656e8
 
+### Create contact
+POST http://cse341-project-1-lods.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Ricardo",
+    "lastName": "Nascimento",
+    "email": "ricardonascimento@gmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "05/03/1990"
+}
+
+### Update contact
+PUT http://cse341-project-1-lods.onrender.com/contacts/65e0c18be73805daecf656e5 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Maria",
+    "lastName": "de Lurdes",
+    "email": "mariadelurdes@gmail.com",
+    "favoriteColor": "Black",
+    "birthday": "09/02/1977"
+}
+
+### Delete Contact
+DELETE http://cse341-project-1-lods.onrender.com/contacts/65e8ab58559c92390b41211e
