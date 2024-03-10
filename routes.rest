@@ -10,11 +10,11 @@ POST http://localhost:3000/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Ricardo",
-    "lastName": "Nascimento",
-    "email": "ricardonascimento@gmail.com",
-    "favoriteColor": "Blue",
-    "birthday": "05/03/1990"
+    "firstName": "Yarine",
+    "lastName": "Lima",
+    "email": "yarinelima@gmail.com",
+    "favoriteColor": "Purple",
+    "birthday": "08/03/1985"
 }
 
 ### Update contact
@@ -37,18 +37,18 @@ DELETE http://localhost:3000/contacts/65e8ab58559c92390b41211e
 GET https://cse341-project-1-lods.onrender.com/contacts
 
 ### Get contact by id
-GET https://cse341-project-1-lods.onrender.com/contacts/65e0c337e73805daecf656e8
+GET https://cse341-project-1-lods.onrender.com/contacts/65e9262b925bc2db76df0db2
 
 ### Create contact
 POST http://cse341-project-1-lods.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Ricardo",
-    "lastName": "Nascimento",
-    "email": "ricardonascimento@gmail.com",
-    "favoriteColor": "Blue",
-    "birthday": "05/03/1990"
+    "firstName": "Yarine",
+    "lastName": "Lima",
+    "email": "yarinelima@gmail.com",
+    "favoriteColor": "Purple",
+    "birthday": "08/03/1985"
 }
 
 ### Update contact
@@ -64,4 +64,4 @@ content-type: application/json
 }
 
 ### Delete Contact
-DELETE http://cse341-project-1-lods.onrender.com/contacts/65e8ab58559c92390b41211e
+DELETE http://cse341-project-1-lods.onrender.com/contacts/65ec7a853ff28779a66c02aa

@@ -6,6 +6,7 @@ router.use("/", require("./swagger"));
 
 router.get("/", (req, res) => {
     //#swagger.tags=["Hello World"]
+    //#swagger.summary = Returns Hello World
     res.send("Hello World!");
 });
 

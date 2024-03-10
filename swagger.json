@@ -16,6 +16,7 @@
         "tags": [
           "Hello World"
         ],
+        "summary": "Returns Hello World",
         "description": "",
         "responses": {
           "200": {
@@ -39,6 +40,7 @@
         "tags": [
           "Contacts"
         ],
+        "summary": "Returns all contacts",
         "description": "",
         "produces": [
           "application/json"
@@ -53,11 +55,13 @@
         "tags": [
           "Contacts"
         ],
+        "summary": "Creates a new contact",
         "description": "",
         "parameters": [
           {
             "name": "body",
             "in": "body",
+            "description": "Contact object that needs to be added to the database",
             "schema": {
               "type": "object",
               "properties": {
@@ -81,8 +85,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "200": {
+            "description": "OK"
           },
           "500": {
             "description": "Internal Server Error"
@@ -95,6 +99,7 @@
         "tags": [
           "Contacts"
         ],
+        "summary": "Returns a contact bt ID",
         "description": "",
         "produces": [
           "application/json"
@@ -104,6 +109,7 @@
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "The ID of the contact to return",
             "type": "string"
           }
         ],
@@ -117,17 +123,20 @@
         "tags": [
           "Contacts"
         ],
+        "summary": "Updates an existing contact",
         "description": "",
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "The ID of the contact to update",
             "type": "string"
           },
           {
             "name": "body",
             "in": "body",
+            "description": "Contact object that needs to be added to the database",
             "schema": {
               "type": "object",
               "properties": {
@@ -151,8 +160,8 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "200": {
+            "description": "OK"
           },
           "500": {
             "description": "Internal Server Error"
@@ -163,18 +172,20 @@
         "tags": [
           "Contacts"
         ],
+        "summary": "Deletes an existing contact",
         "description": "",
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
+            "description": "The ID of the contact to delete",
             "type": "string"
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "200": {
+            "description": "OK"
           },
           "500": {
             "description": "Internal Server Error"
